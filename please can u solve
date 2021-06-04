@@ -1,0 +1,44 @@
+########  Catch Brackets
+
+We Love To Play Games. We All Are Fond Of A Game Called Catch Brackets.
+Game Description: Let Us Say That Screen Is Divided Into 'row' * 'col' Number Of Pixels. The Main Character Is Kept At A Pixel On The Bottom Most Row. The Position Of Main Character Is Denoted By Character 'm'. The Main Character Can Move One Pixel Left Or Right Or Stay Still. This Means It Is Not Necessary To Move The Main Character.
+ It Is Given That All The Other Pixels Of The Game (Except The Last Row) Are Filled By Either One Of These Elements: '(' (Opening Bracket), ')' (Closing Brackets), '.' (Empty Pixel), '*' (Landmines). Except The Last Row, All The Other Rows Simultaneously Move One Pixel Down And Eventually Move Out Of The Screen.
+
+While Each Row Is Moving Out, The Main Character Want To Move And Catch Brackets. The Caught Bracket Gets Added To Its Array. The Objective Of The Main Character Is To Make Longest Array Of Balanced Brackets.
+
+The Game Becomes Over When Either Main Character Catches A Landmine Or All The Rows Move Out Of The Screen.
+
+An Array Or Sequence Of Balanced Brackets Is Defined As Follows:
+
+1. () Is A Sequence Of Balanced Brackets.
+
+2. If P Is A Sequence Of Balanced Brackets, Then (P) Is Also A Sequence Of Balanced Brackets.
+
+3. If P And Q Are Sequences Of Balanced Brackets, Then Pq Is Also A Sequence Of Balanced Bracket.
+
+Your Task Is To Find The Longest Possible Array Of Balanced Brackets.
+
+Input Format:
+The First Line Of Input Contains Two Space Separated Integers, That Denote The Values Of 'row' And 'col'. The Value Of 'row' And 'col' Lies In The Range: [1, 300]. Each Of Following 'row' Number Of Lines Contains 'col' Number Of Space Separated Characters. Characters Can Be '.', '(', ')', '*' Or 'm'. The Test Cases Would Be Such That At Least One Array Of Balanced Brackets Is Possible To Catch.
+
+Constraints:
+
+Time Limit: 0.5 Seconds
+
+Output Format:
+The First Line Of Output Contains The Length Of Longest Array Or Sequence Of Balanced Brackets.
+The Following Line Contains The Array Itself. If There Are Multiple Answers, Output The Lexicographically Smallest One.     
+
+Sample Input 1:
+
+5 4
+.)..
+*.((
+.).*
+(.((
+.M..
+
+Sample Output 1:
+
+4
+()()
